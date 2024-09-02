@@ -5,48 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d017c72-4597-4a74-a866-475275a6af7e" name="Changes" comment="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑">
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseSQLApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/TableProcessDim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/TableProcessDwd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/constant/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/DateFormatUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSinkUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSourceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/HBaseUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/JdbcUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/SQLUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/enzo/gmall/realtime/dim/app/DimApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/enzo/gmall/realtime/dim/function/DimSinkFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/enzo/gmall/realtime/dim/function/TableProcessFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dim/src/test/java/com/enzo/gmall/realtime/test/Test01_FlinkCDC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/src/main/java/com/enzo/gmall/realtime/dwd/db/split/app/DwdBaseDb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/src/main/java/com/enzo/gmall/realtime/dwd/db/split/function/BaseDbTableProcessFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/src/main/java/com/enzo/gmall/realtime/dwd/log/split/app/DwdBaseLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdInteractionCommentInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Dept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Emp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Flink01_SQL_Join.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Flink02_SQL_Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-cart-add/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-cart-add/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeCartAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-cancel-detail/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-cancel-detail/src/main/java/com/enzo/gmall/realtime/dwd/app/DwdTradeOrderCancelDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-detail/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-detail/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeOrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-pay-suc-detail/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-pay-suc-detail/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeOrderPaySucDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-refund/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-refund/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeOrderRefund.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-refund-pay-suc-detail/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-refund-pay-suc-detail/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeRefundPaySucDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realtime-dwd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dwd/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +179,7 @@
       <workItem from="1725064435603" duration="13002000" />
       <workItem from="1725165307735" duration="3935000" />
       <workItem from="1725190776326" duration="4757000" />
-      <workItem from="1725236917899" duration="1944000" />
+      <workItem from="1725236917899" duration="2628000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1724584175279</created>
@@ -229,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1724584175279</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑">
+      <created>1725239205224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725239205224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +214,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑" />
+    <option name="LAST_COMMIT_MESSAGE" value="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
