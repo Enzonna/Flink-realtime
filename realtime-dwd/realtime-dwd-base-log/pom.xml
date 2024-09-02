@@ -6,28 +6,24 @@
         <artifactId>fastfood-realtime</artifactId>
         <groupId>com.enzo</groupId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>realtime-dwd</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>realtime-dwd-trade-cart-add</module>
-        <module>realtime-dwd-trade-order-detail</module>
-        <module>realtime-dwd-trade-order-cancel-detail</module>
-        <module>realtime-dwd-trade-order-pay-suc-detail</module>
-        <module>realtime-dwd-trade-order-refund</module>
-        <module>realtime-dwd-trade-refund-pay-suc-detail</module>
-        <module>realtime-dwd-base-db</module>
-    </modules>
-
+    <artifactId>realtime-dwd-base-log</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.enzo</groupId>
             <artifactId>realtime-common</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>provided</scope>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
 </project>

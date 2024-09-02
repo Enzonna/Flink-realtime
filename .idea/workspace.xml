@@ -4,23 +4,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d017c72-4597-4a74-a866-475275a6af7e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dim/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dwd/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/pom.xml" afterDir="false" />
+    <list default="true" id="2d017c72-4597-4a74-a866-475275a6af7e" name="Changes" comment="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑">
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseSQLApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/TableProcessDim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/TableProcessDwd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/DateFormatUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSinkUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSourceUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/HBaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/SQLUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/enzo/gmall/realtime/dim/app/DimApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/enzo/gmall/realtime/dim/function/DimSinkFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dim/src/main/java/com/enzo/gmall/realtime/dim/function/TableProcessFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dim/src/test/java/com/enzo/gmall/realtime/test/Test01_FlinkCDC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/src/main/java/com/enzo/gmall/realtime/dwd/db/split/app/DwdBaseDb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-db/src/main/java/com/enzo/gmall/realtime/dwd/db/split/function/BaseDbTableProcessFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/src/main/java/com/enzo/gmall/realtime/dwd/log/split/app/DwdBaseLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdInteractionCommentInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Dept.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Emp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Flink01_SQL_Join.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test/Flink02_SQL_Demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-cart-add/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-cart-add/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeCartAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-cancel-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-cancel-detail/src/main/java/com/enzo/gmall/realtime/dwd/app/DwdTradeOrderCancelDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-detail/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeOrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-pay-suc-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-pay-suc-detail/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeOrderPaySucDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-refund/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-order-refund/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeOrderRefund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-refund-pay-suc-detail/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-trade-refund-pay-suc-detail/src/main/java/com/enzo/gmall/realtime/dwd/db/app/DwdTradeRefundPaySucDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dwd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dwd/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -36,16 +78,118 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8 (2)",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8 (2)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/atguigu/23-电商实时数仓5.0/fastfood-realtime/realtime-dwd/realtime-dwd-interaction-comment-info/src/test/java/com/enzo/gmall/realtime/test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
-}]]></component>
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\atguigu\23-电商实时数仓5.0\fastfood-realtime\realtime-dwd\realtime-dwd-interaction-comment-info\src\test\java\com\enzo\gmall\realtime\test" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.enzo.gmall.realtime.common.bean" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb">
+    <configuration name="DwdBaseDb (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmallrealtime.dwd.db.split.app.DwdBaseDb" />
+      <module name="realtime-dwd-base-db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmallrealtime.dwd.db.split.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwdBaseDb (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmallrealtime.dwd.db.split.app.DwdBaseDb" />
+      <module name="realtime-dwd-base-db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmallrealtime.dwd.db.split.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwdBaseDb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmallrealtime.dwd.db.split.app.DwdBaseDb" />
+      <module name="realtime-dwd-base-db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmallrealtime.dwd.db.split.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwdTradeOrderDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.db.app.DwdTradeOrderDetail" />
+      <module name="realtime-dwd-trade-order-detail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmall.realtime.dwd.db.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb" />
+      <module name="realtime-dwd-base-db" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmall.realtime.dwd.db.split.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb" />
+        <item itemvalue="Application.DwdBaseDb (2)" />
+        <item itemvalue="Application.DwdBaseDb" />
+        <item itemvalue="Application.DwdBaseDb (1)" />
+        <item itemvalue="Application.DwdTradeOrderDetail" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration" cleanupOnStartRun="true">
     <configuration>C:\Users\Enzo\AppData\Roaming\Subversion</configuration>
@@ -59,8 +203,33 @@
       <option name="presentableId" value="Default" />
       <updated>1724504650991</updated>
       <workItem from="1724504652734" duration="1644000" />
-      <workItem from="1724582761766" duration="1168000" />
+      <workItem from="1724582761766" duration="1966000" />
+      <workItem from="1724722281496" duration="6000" />
+      <workItem from="1724730936314" duration="14000" />
+      <workItem from="1724752386563" duration="2000" />
+      <workItem from="1724763898066" duration="606000" />
+      <workItem from="1724769808842" duration="6582000" />
+      <workItem from="1724804658770" duration="20705000" />
+      <workItem from="1724828953198" duration="3362000" />
+      <workItem from="1724833061160" duration="5345000" />
+      <workItem from="1724840134701" duration="4199000" />
+      <workItem from="1724853598149" duration="2551000" />
+      <workItem from="1724895113530" duration="13487000" />
+      <workItem from="1724916096583" duration="6139000" />
+      <workItem from="1724977479629" duration="30650000" />
+      <workItem from="1725064435603" duration="13002000" />
+      <workItem from="1725165307735" duration="3935000" />
+      <workItem from="1725190776326" duration="4757000" />
+      <workItem from="1725236917899" duration="1944000" />
     </task>
+    <task id="LOCAL-00001" summary="init project">
+      <created>1724584175279</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724584175279</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,6 +245,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <option name="LAST_COMMIT_MESSAGE" value="init project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

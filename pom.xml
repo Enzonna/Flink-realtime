@@ -13,6 +13,8 @@
         <module>realtime-dim</module>
         <module>realtime-dwd</module>
         <module>realtime-dws</module>
+        <module>realtime-dwd/realtime-dwd-base-log</module>
+        <module>realtime-dwd/realtime-dwd-interaction-comment-info</module>
     </modules>
 
 
