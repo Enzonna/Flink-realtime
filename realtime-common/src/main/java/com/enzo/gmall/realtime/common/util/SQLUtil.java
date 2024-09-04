@@ -40,4 +40,18 @@ public class SQLUtil {
                 "  'value.format' = 'json'\n" +
                 ")";
     }
+
+
+    //获取Doris连接器相关的连接属性
+    public static String getDorisDDL(String tableName) {
+        return "WITH (" +
+                "  'connector' = 'doris', " +
+                "  'fenodes' = '" + Constant.DORIS_FE_NODES + "', " +
+                "  'table.identifier' = '" + Constant.DORIS_DATABASE + "." + tableName + "', " +
+                "  'username' = 'root', " +
+                "  'password' = 'aaaaaa', " +
+                "  'sink.properties.format' = 'json', " +
+                "  'sink.enable-2pc' = 'false' " + // 测试阶段可以关闭两阶段提交,方便测试
+                ")  ";
+    }
 }

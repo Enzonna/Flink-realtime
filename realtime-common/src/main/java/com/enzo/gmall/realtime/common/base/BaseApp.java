@@ -2,6 +2,7 @@ package com.enzo.gmall.realtime.common.base;
 
 import com.enzo.gmall.realtime.common.util.FlinkSourceUtil;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
+import org.apache.flink.api.common.restartstrategy.RestartStrategies;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.configuration.RestOptions;
 import org.apache.flink.connector.kafka.source.KafkaSource;
@@ -29,6 +30,8 @@ public abstract class BaseApp {
         // TODO 2. 检查点
         // 2.1 开启检查点
         env.enableCheckpointing(5000L, CheckpointingMode.EXACTLY_ONCE);
+
+
 //        CheckpointConfig checkpointConfig = env.getCheckpointConfig();
 //
 //        // 2.2 设置检查点超时时间
@@ -47,7 +50,7 @@ public abstract class BaseApp {
 //        checkpointConfig.setCheckpointStorage("hdfs://hadoop102:8020/ck" + ckAndGroupId);
 //
 //        // 2.7 设置重启策略
-//        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(3, 3000L));
+        env.setRestartStrategy(RestartStrategies.fixedDelayRestart(3, 3000L));
 
         // 2.8 设置操作Hadoop的用户
         System.setProperty("HADOOP_USER_NAME", "enzo");

@@ -10,6 +10,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>realtime-dws</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>realtime-dws-traffic-source-keyword-page-view-window</module>
+        <module>realtime-dws-traffic-vc-ch-ar-is_new-page-view-window</module>
+        <module>realtime-dws-traffic-home-detail-page-view-window</module>
+        <module>realtime-dws-user-user-login-window</module>
+        <module>realtime-dws-trade-cart-add-uu-window</module>
+    </modules>
 
     <dependencies>
         <dependency>

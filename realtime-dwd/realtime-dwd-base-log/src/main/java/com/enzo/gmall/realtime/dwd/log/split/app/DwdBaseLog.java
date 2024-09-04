@@ -57,11 +57,15 @@ public class DwdBaseLog extends BaseApp {
 
     @Override
     public void handle(StreamExecutionEnvironment env, DataStreamSource<String> kafkaStrDS) {
+        // kafkaStrDS.print("kafka✅✅:");
+
         // TODO 1. Perform type conversion on streaming data and perform simple ETL     jsonStr -> jsonObj
         SingleOutputStreamOperator<JSONObject> jsonObjDS = etl(kafkaStrDS);
+        //jsonObjDS.print("etl✅✅:");
 
         // TODO 2. Repairs 新老访客 label
         SingleOutputStreamOperator<JSONObject> fixedDS = fixedNewAndOld(jsonObjDS);
+//        fixedDS.print("fixed:");
 
         // TODO 3. Splitting, putting different types of logs into different streams
         Map<String, DataStream> streamMap = splitStream(fixedDS);
@@ -173,11 +177,11 @@ public class DwdBaseLog extends BaseApp {
         SideOutputDataStream<String> actionDS = pageDS.getSideOutput(actionTag);
 
 
-        pageDS.print("page:✅");
-        errDS.print("err:✅");
-        startDS.print("start:✅");
-        displayDS.print("display:✅");
-        actionDS.print("action:✅");
+        //errDS.print("err:✅");
+        //pageDS.print("page:✅");
+        //startDS.print("start:✅");
+        //displayDS.print("display:✅");
+        //actionDS.print("action:✅");
 
         Map<String, DataStream> splitMap = new HashMap<>();
         splitMap.put("err", errDS);
@@ -224,13 +228,13 @@ public class DwdBaseLog extends BaseApp {
                             if (StringUtils.isEmpty(lastVisitDate)) {
                                 // 如果键控状态为null，认为本次是该访客首次访问 APP，将日志中 ts 对应的日期更新到状态中，不对 is_new 字段做修改
                                 lastVisitDateState.update(curVisitDate);
+                            }else {
+                                // 如果键控状态不为null，且首次访问日期不是当日，说明访问的是老访客，将 is_new 字段置为 0
+                                if (!lastVisitDate.equals(curVisitDate)) {
+                                    isNew = "0";
+                                    jsonObj.getJSONObject("common").put("is_new", isNew);
+                                }
                             }
-                            // 如果键控状态不为null，且首次访问日期不是当日，说明访问的是老访客，将 is_new 字段置为 0
-                            if (!lastVisitDate.equals(curVisitDate)) {
-                                isNew = "0";
-                                jsonObj.getJSONObject("common").put("is_new", isNew);
-                            }
-
 
                         } else {
                             // 如果 is_new 的值为 0
@@ -247,7 +251,7 @@ public class DwdBaseLog extends BaseApp {
                     }
                 }
         );
-        fixedDS.print();
+//        fixedDS.print();
         return fixedDS;
     }
 
@@ -275,10 +279,10 @@ public class DwdBaseLog extends BaseApp {
                     }
                 }
         );
-        jsonObjDS.print("standard data🍵");
+//        jsonObjDS.print("standard data🍵");
 
         SideOutputDataStream<String> dirtyDS = jsonObjDS.getSideOutput(dirtyTag);
-        jsonObjDS.getSideOutput(dirtyTag).print("dirty data🍵");
+//        jsonObjDS.getSideOutput(dirtyTag).print("dirty data🍵");
 
 
         // 1.3 Send the dirty data of 测出流 to the Kafka topic

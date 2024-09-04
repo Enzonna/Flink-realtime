@@ -5,7 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d017c72-4597-4a74-a866-475275a6af7e" name="Changes" comment="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑">
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/TrafficHomeDetailPageViewBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/CartAddUuBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/TrafficPageViewBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/UserLoginBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/function/BeanToJsonStrMapFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-trade-cart-add-uu-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-trade-cart-add-uu-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTradeCartAddUuWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-home-detail-page-view-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-home-detail-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficHomeDetailPageViewWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficSourceKeywordPageViewWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/function/KeywordUDTF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/util/KeywordUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/test/Test01_Doris_SQL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/test/Test02_Doris_API.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-vc-ch-ar-is_new-page-view-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-vc-ch-ar-is_new-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficVcChArIsNewPageViewWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-user-user-login-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-user-user-login-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsUserUserLoginWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSinkUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSinkUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/SQLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/SQLUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/src/main/java/com/enzo/gmall/realtime/dwd/log/split/app/DwdBaseLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/src/main/java/com/enzo/gmall/realtime/dwd/log/split/app/DwdBaseLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dws/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dws/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +51,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="enzo &lt;1825437118@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -48,7 +80,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="ReactorSettings">
@@ -62,14 +94,14 @@
       <recent name="com.enzo.gmall.realtime.common.bean" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb">
-    <configuration name="DwdBaseDb (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.DwdTradeCartAdd">
+    <configuration name="DwdBaseLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmallrealtime.dwd.db.split.app.DwdBaseDb" />
-      <module name="realtime-dwd-base-db" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.log.split.app.DwdBaseLog" />
+      <module name="realtime-dwd-base-log" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.gmallrealtime.dwd.db.split.app.*" />
+          <option name="PATTERN" value="com.enzo.gmall.realtime.dwd.log.split.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,41 +109,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DwdBaseDb (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DwdTradeCartAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmallrealtime.dwd.db.split.app.DwdBaseDb" />
-      <module name="realtime-dwd-base-db" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.enzo.gmallrealtime.dwd.db.split.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DwdBaseDb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmallrealtime.dwd.db.split.app.DwdBaseDb" />
-      <module name="realtime-dwd-base-db" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.enzo.gmallrealtime.dwd.db.split.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DwdTradeOrderDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.db.app.DwdTradeOrderDetail" />
-      <module name="realtime-dwd-trade-order-detail" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.db.app.DwdTradeCartAdd" />
+      <module name="realtime-dwd-trade-cart-add" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.enzo.gmall.realtime.dwd.db.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwsTradeCartAddUuWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dws.app.DwsTradeCartAddUuWindow" />
+      <module name="realtime-dws-trade-cart-add-uu-window" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmall.realtime.dws.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwsUserUserLoginWindow (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dws.app.DwsUserUserLoginWindow" />
+      <module name="realtime-dws-user-user-login-window" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmall.realtime.dws.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DwsUserUserLoginWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dws.app.DwsUserUserLoginWindow" />
+      <module name="realtime-dws-user-user-login-window" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.enzo.gmall.realtime.dws.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,27 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb" />
-      <module name="realtime-dwd-base-db" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.enzo.gmall.realtime.dwd.db.split.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.enzo.gmall.realtime.dwd.db.split.app.DwdBaseDb" />
-        <item itemvalue="Application.DwdBaseDb (2)" />
-        <item itemvalue="Application.DwdBaseDb" />
-        <item itemvalue="Application.DwdBaseDb (1)" />
-        <item itemvalue="Application.DwdTradeOrderDetail" />
+        <item itemvalue="Application.DwsTradeCartAddUuWindow" />
+        <item itemvalue="Application.DwdTradeCartAdd" />
+        <item itemvalue="Application.DwsUserUserLoginWindow" />
+        <item itemvalue="Application.DwdBaseLog" />
+        <item itemvalue="Application.DwsUserUserLoginWindow (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +211,13 @@
       <workItem from="1725064435603" duration="13002000" />
       <workItem from="1725165307735" duration="3935000" />
       <workItem from="1725190776326" duration="4757000" />
-      <workItem from="1725236917899" duration="2628000" />
+      <workItem from="1725236917899" duration="4326000" />
+      <workItem from="1725250309723" duration="57000" />
+      <workItem from="1725263972173" duration="2000" />
+      <workItem from="1725271946444" duration="18000" />
+      <workItem from="1725333703688" duration="17615000" />
+      <workItem from="1725409778870" duration="20433000" />
+      <workItem from="1725444396832" duration="7443000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1724584175279</created>
@@ -195,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1725239205224</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑">
+      <created>1725239748541</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725239748542</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
