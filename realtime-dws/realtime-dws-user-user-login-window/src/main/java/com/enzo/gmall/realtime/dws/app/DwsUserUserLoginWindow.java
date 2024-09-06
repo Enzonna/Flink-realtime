@@ -158,7 +158,5 @@ public class DwsUserUserLoginWindow extends BaseApp {
         reduceDS
                 .map(new BeanToJsonStrMapFunction<>())
                 .sinkTo(FlinkSinkUtil.getDorisSink("dws_user_user_login_window"));
-
-
     }
 }

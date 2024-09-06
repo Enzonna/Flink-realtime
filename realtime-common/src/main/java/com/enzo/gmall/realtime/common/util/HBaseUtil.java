@@ -1,12 +1,18 @@
 package com.enzo.gmall.realtime.common.util;
 
 import com.alibaba.fastjson.JSONObject;
+import com.enzo.gmall.realtime.common.constant.Constant;
+import com.google.common.base.CaseFormat;
+import org.apache.commons.beanutils.BeanUtils;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.Cell;
+import org.apache.hadoop.hbase.CellUtil;
 import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.*;
 import org.apache.hadoop.hbase.util.Bytes;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Set;
 
 public class HBaseUtil {
@@ -118,5 +124,41 @@ public class HBaseUtil {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+
+    // 根据row，key到HBase表中查询一条数据出来
+    public static <T> T getRow(Connection hbaseConn, String nameSpace, String tableName, String rowKey, Class<T> clazz, boolean isUnderTo) {
+
+        TableName tableNameObj = TableName.valueOf(nameSpace, tableName);
+        try (Table table = hbaseConn.getTable(tableNameObj)) {
+            // 查询
+            Result result = table.get(new Get(Bytes.toBytes(rowKey)));
+            List<Cell> cells = result.listCells();
+            if (cells != null && cells.size() > 0) {
+                T obj = clazz.newInstance();
+                for (Cell cell : cells) {
+                    String columnName = Bytes.toString(CellUtil.cloneQualifier(cell));
+                    String columnValue = Bytes.toString(CellUtil.cloneValue(cell));
+                    if (isUnderTo) {
+                        columnName = CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.LOWER_CAMEL, columnName);
+                    }
+                    BeanUtils.setProperty(obj, columnName, columnValue);
+                }
+                return obj;
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+
+    public static void main(String[] args) {
+        Connection hBaseConnection = getHBaseConnection();
+        JSONObject dim_base_trademark
+                = getRow(hBaseConnection, Constant.HBASE_NAMESPACE, "dim_base_trademark", "1", JSONObject.class, false);
+        System.out.println(dim_base_trademark);
+        closeHBaseConnection(hBaseConnection);
     }
 }

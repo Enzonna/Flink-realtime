@@ -4,35 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2d017c72-4597-4a74-a866-475275a6af7e" name="Changes" comment="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑">
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/TrafficHomeDetailPageViewBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/CartAddUuBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/TrafficPageViewBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/UserLoginBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/function/BeanToJsonStrMapFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-trade-cart-add-uu-window/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-trade-cart-add-uu-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTradeCartAddUuWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-home-detail-page-view-window/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-home-detail-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficHomeDetailPageViewWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficSourceKeywordPageViewWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/function/KeywordUDTF.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/util/KeywordUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/test/Test01_Doris_SQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/test/Test02_Doris_API.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-vc-ch-ar-is_new-page-view-window/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-vc-ch-ar-is_new-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficVcChArIsNewPageViewWindow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-user-user-login-window/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-user-user-login-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsUserUserLoginWindow.java" afterDir="false" />
+    <list default="true" id="2d017c72-4597-4a74-a866-475275a6af7e" name="Changes" comment="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑&#10;朋友们都开学了，只有我没有书念">
+      <changelist_data name="enzo" email="1825437118@qq.com" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/bean/TradeSkuOrderBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-trade-sku-order-window/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-trade-sku-order-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTradeSkuOrderWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/test/DwsTrafficSourceKeywordPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/base/BaseApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSinkUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/FlinkSinkUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/SQLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/SQLUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/src/main/java/com/enzo/gmall/realtime/dwd/log/split/app/DwdBaseLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dwd/realtime-dwd-base-log/src/main/java/com/enzo/gmall/realtime/dwd/log/split/app/DwdBaseLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/HBaseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-common/src/main/java/com/enzo/gmall/realtime/common/util/HBaseUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/realtime-dws/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dws/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficSourceKeywordPageViewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-traffic-source-keyword-page-view-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsTrafficSourceKeywordPageViewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/realtime-dws/realtime-dws-user-user-login-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsUserUserLoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/realtime-dws/realtime-dws-user-user-login-window/src/main/java/com/enzo/gmall/realtime/dws/app/DwsUserUserLoginWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,11 +74,14 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\atguigu\23-电商实时数仓5.0\fastfood-realtime\realtime-dwd\realtime-dwd-interaction-comment-info\src\test\java\com\enzo\gmall\realtime\test" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\atguigu\23-电商实时数仓5.0\fastfood-realtime\realtime-dws\realtime-dws-traffic-source-keyword-page-view-window\src\main\java\com\enzo\gmall\test" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.enzo.gmall.realtime.common.bean" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DwdTradeCartAdd">
+  <component name="RunManager" selected="Application.RedisUtil">
     <configuration name="DwdBaseLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.log.split.app.DwdBaseLog" />
@@ -109,10 +96,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DwdTradeCartAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DwdTradeOrderDetail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.db.app.DwdTradeCartAdd" />
-      <module name="realtime-dwd-trade-cart-add" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dwd.db.app.DwdTradeOrderDetail" />
+      <module name="realtime-dwd-trade-order-detail" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.enzo.gmall.realtime.dwd.db.app.*" />
@@ -123,10 +110,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DwsTradeCartAddUuWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DwsTradeSkuOrderWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dws.app.DwsTradeCartAddUuWindow" />
-      <module name="realtime-dws-trade-cart-add-uu-window" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dws.app.DwsTradeSkuOrderWindow" />
+      <module name="realtime-dws-trade-sku-order-window" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.enzo.gmall.realtime.dws.app.*" />
@@ -137,13 +124,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DwsUserUserLoginWindow (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="HBaseUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dws.app.DwsUserUserLoginWindow" />
-      <module name="realtime-dws-user-user-login-window" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.common.util.HBaseUtil" />
+      <module name="realtime-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.gmall.realtime.dws.app.*" />
+          <option name="PATTERN" value="com.enzo.gmall.realtime.common.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,13 +138,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DwsUserUserLoginWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="INCLUDE_PROVIDED_SCOPE" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.dws.app.DwsUserUserLoginWindow" />
-      <module name="realtime-dws-user-user-login-window" />
+      <option name="MAIN_CLASS_NAME" value="com.enzo.gmall.realtime.common.util.RedisUtil" />
+      <module name="realtime-common" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.enzo.gmall.realtime.dws.app.*" />
+          <option name="PATTERN" value="com.enzo.gmall.realtime.common.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DwsTradeCartAddUuWindow" />
-        <item itemvalue="Application.DwdTradeCartAdd" />
-        <item itemvalue="Application.DwsUserUserLoginWindow" />
+        <item itemvalue="Application.DwsTradeSkuOrderWindow" />
+        <item itemvalue="Application.RedisUtil" />
+        <item itemvalue="Application.HBaseUtil" />
+        <item itemvalue="Application.DwdTradeOrderDetail" />
         <item itemvalue="Application.DwdBaseLog" />
-        <item itemvalue="Application.DwsUserUserLoginWindow (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -218,6 +205,13 @@
       <workItem from="1725333703688" duration="17615000" />
       <workItem from="1725409778870" duration="20433000" />
       <workItem from="1725444396832" duration="7443000" />
+      <workItem from="1725452977437" duration="3234000" />
+      <workItem from="1725456224771" duration="339000" />
+      <workItem from="1725515894756" duration="3810000" />
+      <workItem from="1725519719745" duration="5892000" />
+      <workItem from="1725582339435" duration="296000" />
+      <workItem from="1725582646041" duration="4235000" />
+      <workItem from="1725587841320" duration="15825000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1724584175279</created>
@@ -240,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1725239748542</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2024-08-27 不要温和地走进那个良夜&#10;2024-08-30 养了只小猫，叫佑佑">
+      <created>1725453047811</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725453047811</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

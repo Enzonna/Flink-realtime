@@ -58,7 +58,7 @@ public class DwsTrafficSourceKeywordPageViewWindow extends BaseSQLApp {
                 "    keyword,\n" +
                 "    count(*) keyword_count \n" +
                 "    from split_table  group by keyword,TUMBLE(et, INTERVAL '10' second);");
-        // resTable.execute().print();
+        resTable.execute().print();
 
 
         // TODO 6. 将聚合的结果写到Doris表中
