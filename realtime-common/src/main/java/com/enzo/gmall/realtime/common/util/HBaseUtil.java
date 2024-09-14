@@ -40,6 +40,55 @@ public class HBaseUtil {
         }
     }
 
+
+    // 🍵🍵🍵获取异步操作连接对象
+    public static AsyncConnection getHBaseAsyncConnection() {
+        try {
+            Configuration conf = new Configuration();
+            conf.set("hbase.zookeeper.quorum", "hadoop102,hadoop103,hadoop104");
+            AsyncConnection asyncConnection = ConnectionFactory.createAsyncConnection(conf).get();
+            return asyncConnection;
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    // 🍵🍵🍵关闭异步操作连接对象
+    public static void closeHBaseAsyncConnection(AsyncConnection asyncRedisConn) {
+        if (asyncRedisConn != null && !asyncRedisConn.isClosed()) {
+            try {
+                asyncRedisConn.close();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+
+    // 🍵🍵🍵以异步的方式根据rowkey到Hbase表中查询数据
+    public static JSONObject readDimAsync(AsyncConnection asyncRedisConn, String nameSpace, String tableName, String rowKey) {
+        try {
+            TableName tableNameObj = TableName.valueOf(nameSpace, tableName);
+            AsyncTable<AdvancedScanResultConsumer> asyncTable = asyncRedisConn.getTable(tableNameObj);
+            Get get = new Get(Bytes.toBytes(rowKey));
+            Result result = asyncTable.get(get).get();
+            List<Cell> cells = result.listCells();
+            if (cells != null && cells.size() > 0) {
+                JSONObject dimJsonObj = new JSONObject();
+                for (Cell cell : cells) {
+                    String columnName = Bytes.toString(CellUtil.cloneQualifier(cell));
+                    String columnValue = Bytes.toString(CellUtil.cloneValue(cell));
+                    dimJsonObj.put(columnName, columnValue);
+                }
+                return dimJsonObj;
+            }
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+
+
     // 建表
     public static void createHBaseTable(Connection hbaseConn, String nameSpace, String tableName, String... families) {
         if (families.length < 1) {

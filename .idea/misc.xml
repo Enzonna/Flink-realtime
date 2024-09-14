@@ -5,6 +5,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall0318-publisher(SpringBoot框架)/pom.xml" />
+        <option value="$PROJECT_DIR$/gmall0318-publisher/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
